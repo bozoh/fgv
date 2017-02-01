@@ -96,3 +96,7 @@ str(lista_masculino)
 
 #titanic[which(titanic$SibSp==5),]
 #titanic[grep('^Goodwin.*?',titanic$Name, perl = T),]
+titanic$Fare_class<-cut(titanic$Fare, breaks = c(0,7.91,14.45,31,512.33), labels=c("very cheap", "cheap","normal","expensive"))
+
+
+
